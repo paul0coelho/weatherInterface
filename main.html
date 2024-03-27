@@ -15,25 +15,27 @@
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
-    <div class=" container">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="weahterform">
-                <h1>Search weather</h1>
-                <label for="paw-form-lat">Latitude</label>
-                <input id="paw-form-lat" type="text" class="form-control paw-form-element" placeholder="41.1579">
-                <label for="paw-form-lon">Longitude</label>
-                <input id="paw-form-lon" type="text" class="form-control paw-form-element" placeholder="-8.6291">
-                <button id="paw-form-searchWeather" class="btn btn-success paw-form-element"
-                    onclick="searchWeather()">Search</button>
-            </div>
-            <hr>
-            <div id="paw-results-row" class="col-md-12">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
                 <div class="weahterform">
-                    <h1>Weather Results</h1>
-                    <p id="Results"></p>
+                    <h1>Search weather</h1>
+                    <label for="paw-form-lat">Latitude</label>
+                    <input id="paw-form-lat" type="text" class="form-control paw-form-element" placeholder="41.1579">
+                    <label for="paw-form-lon">Longitude</label>
+                    <input id="paw-form-lon" type="text" class="form-control paw-form-element" placeholder="-8.6291">
+                    <button id="paw-form-searchWeather" class="btn btn-success paw-form-element"
+                        onclick="searchWeather()">Search</button>
+                </div>
+                <hr>
+                <div id="paw-results-row" class="col-md-12">
+                    <div class="weahterform">
+                        <h1>Weather Results</h1>
+                        <p id="Results"></p>
+                        <i id="weather-icon" class="fas" aria-hidden="true"></i>
+                    </div>
                 </div>
             </div>
         </div>
@@ -54,6 +56,6 @@
     <!-- user javascript -->
     <script src="node.js"></script>
 
-    </body>
+</body>
 
 </html>
